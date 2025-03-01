@@ -1,4 +1,5 @@
 terraform {
+  
   required_version = ">= 1.0.0"
   required_providers {
     random = {
@@ -8,10 +9,10 @@ terraform {
   }
 
   backend "s3" {
-    bucket         = var.aws_backend_bucket
-    key            = var.aws_backend_bucket
-    region         = var.aws_region
-    dynamodb_table = var.aws_backend_dynamodb
+    bucket         = "tf-backend-bucket-09876543"
+    key            = "tf_state"
+    region         = "us-east-1"
+    dynamodb_table = "terraform-lock"
     encrypt        = true
   }
 
