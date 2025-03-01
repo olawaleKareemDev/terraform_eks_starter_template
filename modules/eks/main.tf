@@ -6,7 +6,7 @@ resource "aws_eks_cluster" "retrunCluster01" {
   }
 
   role_arn = aws_iam_role.cluster.arn
-  version  = "1.31"
+  version  = var.cluster_version
 
   bootstrap_self_managed_addons = false
 
