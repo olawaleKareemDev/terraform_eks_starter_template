@@ -43,3 +43,10 @@ variable "cluster_role_name" {
   default = "retrunClusterRole01"            #change to your value
   type = string
 }
+
+
+variable "node_group_name" {
+  description = "EKS node name"
+  default = "retrunClusterNodeGroup01"          #change to your value
+  type = string
+}

@@ -4,9 +4,15 @@ variable "vpc_id" {
     type        = string
 }
 
-variable "vpc_cidr" {
-    description = "VPC CIDR from the VPC module"
+variable "vpc_cidr_private_subnet" {
+    description = "VPC CIDR from the VPC module for private subnet"
     type        = string
+    default = "10.0.0.0/17"
+}
+variable "vpc_cidr_public_subnet" {
+    description = "VPC CIDR from the VPC module for public subnet"
+    type        = string
+    default = "10.0.128.0/17"
 }
 
 variable "private_subnets" {

@@ -7,7 +7,6 @@ module "vpc" {
 module "subnet" {
   source   = "./modules/subnet"
   vpc_id   = module.vpc.vpc_id  
-  vpc_cidr = module.vpc.vpc_cidr
 }
 
 module "gateways" {

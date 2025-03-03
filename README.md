@@ -19,7 +19,7 @@ Terraform modules provide a reusable, modular approach to infrastructure-as-code
 ## Architecture Overview
 - **EKS Control Plane:** Managed by AWS
 - **Worker Nodes:** EC2 instances or Fargate
-- **Networking:** VPC, subnets, security groups
+- **Networking:** VPC, subnets, route-table
 - **IAM Roles and Policies:** Permissions for EKS and nodes
 
 ## Terraform Module Structure
